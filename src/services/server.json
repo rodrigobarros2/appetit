@@ -1,0 +1,151 @@
+{
+	"clients": [
+		{
+			"id": 1,
+			"name": "Justine Marshall",
+			"avatar": "https://svgshare.com/i/Kkn.svg"
+		},
+		{
+			"id": 2,
+			"name": "Bairam Frootan",
+			"avatar": "https://svgshare.com/i/Kn8.svg"
+		},
+		{
+			"id": 3,
+			"name": "Tua Manuera",
+			"avatar": "https://svgshare.com/i/Knq.svg"
+		},
+		{
+			"id": 4,
+			"name": "Justine Marshall",
+			"avatar": "https://svgshare.com/i/Km8.svg"
+		},
+		{
+			"id": 5,
+			"name": "Bairam Frootan",
+			"avatar": "https://svgshare.com/i/Kko.svg"
+		}
+	],
+	"orders": [
+		{
+			"id": 1,
+			"dateSale": "13/05/2019",
+			"valueSale": 45.8,
+			"sale": [
+				{
+					"id": 1,
+					"name": "Justine Marshall",
+					"avatar": "https://svgshare.com/i/Kkn.svg",
+					"date": "13/05/2019",
+					"description": "cuscuz com calabresa, suco de laranja",
+					"value": 3.5
+				},
+				{
+					"id": 2,
+					"date": "13/05/2019",
+					"name": "Bairam Frootan",
+					"avatar": "https://svgshare.com/i/Kn8.svg",
+					"description": "cuscuz com calabresa, suco de laranja",
+					"value": 7.9
+				},
+				{
+					"id": 3,
+					"name": "Tua Manuera",
+					"avatar": "https://svgshare.com/i/Knq.svg",
+					"date": "13/05/2019",
+					"description": "2x bolo frito, café c/ leite.",
+					"value": 4.5
+				}
+			]
+		},
+		{
+			"id": 2,
+			"dateSale": "09/05/2019",
+			"valueSale": 123.5,
+			"sale": [
+				{
+					"id": 3,
+					"name": "Justine Marshall",
+					"avatar": "https://svgshare.com/i/Km8.svg",
+					"date": "13/05/2019",
+					"description": "2x sanduíche, vitamina de goiaba.",
+					"value": 5
+				},
+				{
+					"id": 2,
+					"name": "Bairam Frootan",
+					"avatar": "https://svgshare.com/i/Kko.svg",
+					"date": "13/05/2019",
+					"description": "cuscuz com calabresa, suco de maracujá",
+					"value": 3.5
+				}
+			]
+		}
+	],
+	"products": [
+		{
+			"id": 1,
+			"name": "Cuzcuz Simples",
+			"price": 2.25,
+			"imgIten": "https://svgshare.com/i/KnJ.svg",
+			"options": [
+				{
+					"id": 1,
+					"name": "milho"
+				},
+				{
+					"id": 2,
+					"name": "arroz"
+				}
+			]
+		},
+		{
+			"id": 2,
+			"name": "Cuzcuz Completo",
+			"price": 2.25,
+			"imgIten": "https://svgshare.com/i/KmS.svg",
+			"options": [
+				{
+					"id": 1,
+					"name": "milho"
+				},
+				{
+					"id": 2,
+					"name": "arroz"
+				}
+			]
+		},
+		{
+			"id": 3,
+			"name": "Pão caseiro",
+			"price": 2.25,
+			"imgIten": "https://svgshare.com/i/Kka.svg",
+			"options": [
+				{
+					"id": 1,
+					"name": "milho"
+				},
+				{
+					"id": 2,
+					"name": "arroz"
+				}
+			]
+		},
+		{
+			"id": 4,
+			"name": "Pão caseiro completo",
+			"price": 2.25,
+			"imgIten": "https://svgshare.com/i/Kne.svg",
+			"options": [
+				{
+					"id": 1,
+					"name": "milho"
+				},
+				{
+					"id": 2,
+					"name": "arroz"
+				}
+			]
+		}
+	]
+}
