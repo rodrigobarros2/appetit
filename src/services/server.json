@@ -30,7 +30,7 @@
 		{
 			"id": 1,
 			"saleDate": "13/05/2019",
-			"valueSale": 45.8,
+			"saleValue": 45.8,
 			"sale": [
 				{
 					"id": 1,
@@ -61,7 +61,7 @@
 		{
 			"id": 2,
 			"saleDate": "09/05/2019",
-			"valueSale": 123.5,
+			"saleValue": 123.5,
 			"sale": [
 				{
 					"id": 3,
