@@ -1,11 +1,20 @@
 import React from 'react';
 
-import { Container } from './styles';
+import { Container } from '../_layout';
+import { WrapperOne, WrapperTwo, WrapperTree } from './styles';
 
 const OrderDetails: React.FC = () => {
 	return (
 		<Container>
-			<h1>OrderDetails</h1>
+			<WrapperOne>
+				<h1>OrderDetails</h1>
+			</WrapperOne>
+			<WrapperTwo>
+				<h1>OrderDetails</h1>
+			</WrapperTwo>
+			<WrapperTree>
+				<h1>OrderDetails</h1>
+			</WrapperTree>
 		</Container>
 	);
 };
