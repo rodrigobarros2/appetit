@@ -1,11 +1,20 @@
 import React from 'react';
 
-import { Container } from './styles';
+import { Container } from '../_layout/index';
+import { WrapperOne, WrapperTwo, WrapperTree } from './styles';
 
 const Home: React.FC = () => {
 	return (
 		<Container>
-			<h1>Home</h1>
+			<WrapperOne>
+				<h1>Home</h1>
+			</WrapperOne>
+			<WrapperTwo>
+				<h1>Home</h1>
+			</WrapperTwo>
+			<WrapperTree>
+				<h1>Home</h1>
+			</WrapperTree>
 		</Container>
 	);
 };
