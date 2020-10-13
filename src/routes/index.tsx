@@ -13,12 +13,12 @@ const Routes: React.FC = () => (
 	<BrowserRouter>
 		<Switch>
 			<Route path="/" exact component={Login} />
-			<Route path="/" component={Home} />
-			<Route path="/" component={OrderDetails} />
-			<Route path="/" component={OrderFeedback} />
-			<Route path="/" component={PaymentStatus} />
-			<Route path="/" component={SelectClients} />
-			<Route path="/" component={SelectProduct} />
+			<Route path="/home" component={Home} />
+			<Route path="/orderdetails" component={OrderDetails} />
+			<Route path="/orderfeedback" component={OrderFeedback} />
+			<Route path="/paymentstatus" component={PaymentStatus} />
+			<Route path="/selectclients" component={SelectClients} />
+			<Route path="/selectproduct" component={SelectProduct} />
 		</Switch>
 	</BrowserRouter>
 );
