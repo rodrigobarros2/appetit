@@ -1,20 +1,20 @@
 import React from 'react';
 
-import { Container } from '../_layout/index';
-import { WrapperOne, WrapperTwo, WrapperTree } from './styles';
+import Header from '../../components/Header';
+import { Container, WrapperOne, WrapperTwo, Button } from './styles';
 
 const Home: React.FC = () => {
 	return (
 		<Container>
 			<WrapperOne>
-				<h1>Home</h1>
+				<Header />
 			</WrapperOne>
+
 			<WrapperTwo>
-				<h1>Home</h1>
+				<Button>
+					PROGRAMADOR MILHONÁRIO
+				</Button>
 			</WrapperTwo>
-			<WrapperTree>
-				<h1>Home</h1>
-			</WrapperTree>
 		</Container>
 	);
 };
