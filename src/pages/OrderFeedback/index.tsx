@@ -1,11 +1,16 @@
 import React from 'react';
 
-import { Container } from '../Home/styles';
+import { Container, WrapperOne, WrapperTwo } from './styles';
 
 const OrderFeedback: React.FC = () => {
 	return (
 		<Container>
-			<h1>OrderFeedback</h1>
+			<WrapperOne>
+				<h1>Home</h1>
+			</WrapperOne>
+			<WrapperTwo>
+				<h1>Home</h1>
+			</WrapperTwo>
 		</Container>
 	);
 };
