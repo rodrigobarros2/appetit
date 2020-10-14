@@ -19,6 +19,7 @@ export default createGlobalStyle`
 		font-style: normal;
 		-webkit-font-smoothing: antialiased !important;
 		font-family: Roboto, sans-serif;
+		background: #FAFAFA;
 	}
 
 	button {
@@ -40,6 +41,10 @@ export default createGlobalStyle`
 	}
 
 	/* tipografia*/
+
+	a {
+		text-decoration: none;
+	}
 
 	h1 {
 		font-size: 36px;
