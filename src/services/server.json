@@ -86,6 +86,7 @@
 	"products": [
 		{
 			"id": 1,
+			"nameproduct" : "cuzcuz",
 			"name": "Cuzcuz Simples",
 			"price": 2.25,
 			"imgIten": "https://svgshare.com/i/KnJ.svg",
@@ -118,6 +119,7 @@
 		},
 		{
 			"id": 3,
+			"nameproduct" : "Paes",
 			"name": "Pão caseiro",
 			"price": 2.25,
 			"imgIten": "https://svgshare.com/i/Kka.svg",
@@ -147,6 +149,22 @@
 					"name": "arroz"
 				}
 			]
+		}
+	],
+	"orderdetails": [
+		{
+			"id": 1,
+			"date": "13/05/2019",
+			"name": "2x Bolo frito + Café c/ leite",
+			"price": 4.25,
+			"imgIten": "https://svgshare.com/i/Qck.svg"
+		},
+		{
+			"id": 2,
+			"date": "09/05/2019",
+			"name": "2x Bolo frito + Café c/ leite",
+			"price": 4.25,
+			"imgIten": "https://svgshare.com/i/Qck.svg"
 		}
 	]
 }
