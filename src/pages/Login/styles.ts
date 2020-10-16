@@ -17,8 +17,6 @@ export const Logo = styled(AppetitIcon)`
 	height: 80px;
 	margin-bottom: 40px;
 
-/* Primary */
-
 	/* 	> path {
 		fill: #f00;
 	}
@@ -34,12 +32,10 @@ export const Wrapper = styled.div`
 	align-items: center;
 	justify-content: center;
 
-
 	h3 {
 		margin-bottom: 16px;
 		text-align: center;
 		color: rgba(0, 0, 0, 0.87);
-
 	}
 
 	p {
@@ -49,7 +45,7 @@ export const Wrapper = styled.div`
 		color: rgba(0, 0, 0, 0.54);
 	}
 
-	caption {
+	span {
 		color: rgba(0, 0, 0, 0.56);
 		margin-top: 64px;
 		font-size: 16px;
