@@ -93,10 +93,4 @@ export default createGlobalStyle`
 		font-weight: 400;
 		line-height: 24px;
 	}
-
-	caption {
-		font-size: 12px;
-		font-weight: 400;
-		line-height: 18px;
-	}
 `;
