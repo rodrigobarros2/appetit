@@ -26,9 +26,9 @@ const OrdersPlaced: React.FC = () => {
 
 	useEffect(() => {
 		async function loadApi() {
-			const responseOrders = await api.get("orders");
-			setOrders(responseOrders.data);
-			console.log(responseOrders.data);
+			const response = await api.get("orders");
+			setOrders(response.data);
+			console.log(response.data);
 		}
 		loadApi();
 	}, []);
