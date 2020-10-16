@@ -16,7 +16,7 @@ const Header: React.FC = () => {
 					<li>encerrados</li>
 					<li><IconUser />clientes</li>
 				</ul>
-				<caption>Infoway Gestão em Saúde ©, 2019.</caption>
+				<p>Infoway Gestão em Saúde ©, 2019.</p>
 			</Wrapper>
 		</Container >
 	);
