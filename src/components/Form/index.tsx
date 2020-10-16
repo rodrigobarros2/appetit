@@ -9,11 +9,11 @@ const Form: React.FC = () => {
 				<OutlinedInput>
 					<div className="input-group">
 						<input type="text" className="input-area" required id="inputField" />
-						<label htmlFor="inputField" className="label">Email</label>
+						<label className="label">Email</label>
 					</div>
 					<div className="input-group">
-						<input type="password" className="input-area" required id="inputField" />
-						<label htmlFor="inputField" className="label">Senha</label>
+						<input type="password" className="input-area" required id="Fieldinput" />
+						<label className="label">Senha</label>
 					</div>
 				</OutlinedInput>
 			</form>
