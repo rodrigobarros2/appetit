@@ -4,6 +4,7 @@ import Header from '../../components/Header';
 import { Container, WrapperOne, WrapperTwo, Button, IconSearch, DateInformation, OrderInformation, IconPlus, IconFilter, FilterOrder } from './styles';
 import api from "../../services/api";
 import OrangeLine from '../../components/OrangeLine';
+import { Link } from 'react-router-dom';
 
 interface Order {
 	id: number;
@@ -20,7 +21,7 @@ interface Order {
 	}>
 }
 
-const Home: React.FC = () => {
+const OrdersPlaced: React.FC = () => {
 	const [orders, setOrders] = useState<Order[]>([]);
 
 	useEffect(() => {
@@ -43,10 +44,12 @@ const Home: React.FC = () => {
 				<h3>Olá, Vanusa!</h3>
 				<OrangeLine />
 
-				<Button>
-					<IconPlus />
-					<p>fazer novo pedido</p>
-				</Button>
+				<Link to="/ordernew">
+					<Button>
+						<IconPlus />
+						<p>fazer novo pedido</p>
+					</Button>
+				</Link>
 
 				<FilterOrder>
 					<IconSearch />
@@ -60,25 +63,27 @@ const Home: React.FC = () => {
 							<h6>{order.saleDate},<span> Você vendeu </span>{formatter.format(order.saleValue)}</h6>
 						</DateInformation>
 
-						<OrderInformation>
-							<img src={order.sale[0].avatar} alt="User" />
-							<div>
-								<h6>{order.sale[0].name}</h6>
+						<Link to="/orderdetails">
+							<OrderInformation>
+								<img src={order.sale[0].avatar} alt="User" />
+								<div>
+									<h6>{order.sale[0].name}</h6>
 
-								<p>{order.sale[0].description}</p>
-							</div>
-							<b>{formatter.format(order.sale[0].value)}</b>
+									<p>{order.sale[0].description}</p>
+								</div>
+								<b>{formatter.format(order.sale[0].value)}</b>
 
-						</OrderInformation>
+							</OrderInformation>
 
-						<OrderInformation>
-							<img src={order.sale[1].avatar} alt="User" />
-							<div>
-								<h6>{order.sale[1].name}</h6>
-								<p>{order.sale[1].description}</p>
-							</div>
-							<h6>{formatter.format(order.sale[1].value)}</h6>
-						</OrderInformation>
+							<OrderInformation>
+								<img src={order.sale[1].avatar} alt="User" />
+								<div>
+									<h6>{order.sale[1].name}</h6>
+									<p>{order.sale[1].description}</p>
+								</div>
+								<h6>{formatter.format(order.sale[1].value)}</h6>
+							</OrderInformation>
+						</Link>
 					</div>
 				))}
 
@@ -87,5 +92,5 @@ const Home: React.FC = () => {
 	);
 };
 
-export default Home;
+export default OrdersPlaced;
 

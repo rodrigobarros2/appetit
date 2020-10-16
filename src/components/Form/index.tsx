@@ -19,7 +19,7 @@ const Form: React.FC = () => {
 			</form>
 			<section>
 				<Link to="/"> recuperar minha senha</Link>
-				<Link to="/home">
+				<Link to="/ordersplaced">
 					<Button className="btn">
 						entrar
 					</Button>

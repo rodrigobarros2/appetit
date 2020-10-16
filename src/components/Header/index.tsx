@@ -11,7 +11,7 @@ const Header: React.FC = () => {
 					<Logo />
 				</div>
 				<ul>
-					<Link to="/home"><li><IconMenu />pedidos</li></Link>
+					<Link to="/ordersplaced"><li><IconMenu />pedidos</li></Link>
 					<li><InconIndicador />em abertos</li>
 					<li>encerrados</li>
 					<li><IconUser />clientes</li>

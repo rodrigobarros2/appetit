@@ -7,6 +7,7 @@ export const Container = styled.div`
 	grid-template-columns: 342px 1fr;
 	grid-template-rows: 1fr;
 
+
 	@media (max-width: 1000px) {
 		display: grid;
 		grid-template-columns: 1fr;
@@ -27,6 +28,10 @@ export const WrapperTwo = styled.div`
 		margin-top: 72px;
 		line-height: 36px;
 		color: rgba(0, 0, 0, 0.88);
+	}
+
+	a {
+		color: inherit;
 	}
 `;
 
@@ -108,23 +113,6 @@ export const FilterOrder = styled.div`
 		}
 `;
 
-export const IconPlus = styled(PlusIcon)`
-
-	path{
-		font-style: normal;
-font-weight: normal;
-font-size: 24px;
-line-height: 36px;
-/* identical to box height, or 150% */
-
-
-/* Black 0.88% */
-
-color: rgba(0, 0, 0, 0.88);
-	}
-
-
-
-`;
+export const IconPlus = styled(PlusIcon)``;
 export const IconSearch = styled(SearchIcon)``;
 export const IconFilter = styled(FilterIcon)``;

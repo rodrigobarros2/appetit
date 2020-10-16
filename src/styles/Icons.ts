@@ -6,3 +6,4 @@ export { PlusIcon } from '../components/Icons/PlusIcon';
 export { SearchIcon } from '../components/Icons/SearchIcon';
 export { FilterIcon } from '../components/Icons/FilterIcon';
 export { ReturnIcon } from '../components/Icons/ReturnIcon';
+export { CookerIcon } from '../components/Icons/CookerIcon';
