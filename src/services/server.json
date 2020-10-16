@@ -30,31 +30,31 @@
 		{
 			"id": 1,
 			"saleDate": "13/05/2019",
-			"saleValue": 45.8,
+			"saleValue": 45.85,
 			"sale": [
 				{
 					"id": 1,
-					"name": "Justine Marshall",
-					"avatar": "https://svgshare.com/i/Kkn.svg",
+					"name": "Marcel Batista",
+					"avatar": "https://svgshare.com/i/Q_F.svg",
 					"date": "13/05/2019",
 					"description": "cuscuz com calabresa, suco de laranja",
-					"value": 3.5
+					"value": 3.55
 				},
 				{
 					"id": 2,
 					"date": "13/05/2019",
-					"name": "Bairam Frootan",
-					"avatar": "https://svgshare.com/i/Kn8.svg",
-					"description": "cuscuz com calabresa, suco de laranja",
-					"value": 7.9
+					"name": "Fernanda Siqueira",
+					"avatar": "https://svgshare.com/i/Q_k.svg",
+					"description": "Iogurte desnatado com maçã.",
+					"value": 7.99
 				},
 				{
-					"id": 3,
-					"name": "Tua Manuera",
-					"avatar": "https://svgshare.com/i/Knq.svg",
+					"id": 2,
+					"name": "Marcel Baptista",
+					"avatar": "https://svgshare.com/i/Q_F.svg",
 					"date": "13/05/2019",
-					"description": "2x bolo frito, café c/ leite.",
-					"value": 4.5
+					"description": "cuscuz com calabresa, suco de maracujá",
+					"value": 3.35
 				}
 			]
 		},
@@ -64,20 +64,21 @@
 			"saleValue": 123.5,
 			"sale": [
 				{
-					"id": 3,
-					"name": "Justine Marshall",
-					"avatar": "https://svgshare.com/i/Km8.svg",
+					"id": 1,
+					"name": "Ana Virlania",
+					"avatar": "https://svgshare.com/i/Q_w.svg",
 					"date": "13/05/2019",
 					"description": "2x sanduíche, vitamina de goiaba.",
-					"value": 5
+					"value": 5.25
 				},
+
 				{
-					"id": 2,
-					"name": "Bairam Frootan",
-					"avatar": "https://svgshare.com/i/Kko.svg",
+					"id": 3,
+					"name": "Luiz Oliveira",
+					"avatar": "https://svgshare.com/i/QZo.svg",
 					"date": "13/05/2019",
-					"description": "cuscuz com calabresa, suco de maracujá",
-					"value": 3.5
+					"description": "2x bolo frito, café c/ leite.",
+					"value": 4.55
 				}
 			]
 		}
