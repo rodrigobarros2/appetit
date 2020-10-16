@@ -3,7 +3,7 @@ import React from 'react';
 import NewOrder from '../../components/NewOrder';
 import Header from '../../components/Header';
 
-import { Container, WrapperOne, WrapperTwo, WrapperTree, IconCooker, IconReturn } from './styles';
+import { Container, WrapperOne, WrapperTwo, WrapperTree, IconCooker } from './styles';
 
 const OrderNew: React.FC = () => {
 	return (
@@ -12,7 +12,6 @@ const OrderNew: React.FC = () => {
 				<Header />
 			</WrapperOne>
 
-
 			<WrapperTwo>
 				<NewOrder />
 				<div>
@@ -20,7 +19,6 @@ const OrderNew: React.FC = () => {
 					<p>Acompanhe aqui um resumo desta venda.</p>
 				</div>
 			</WrapperTwo>
-
 
 			<WrapperTree>
 				<NewOrder />
