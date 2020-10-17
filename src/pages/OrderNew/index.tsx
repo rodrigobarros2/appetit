@@ -1,13 +1,14 @@
 import React, { useEffect, useState } from 'react';
+import { Link } from 'react-router-dom';
+import { Container, Product, DivCooker, OrderInput, WrapperOne, WrapperTwo, WrapperTree, IconCooker, IconSearch, IconReturn, Progreessbar } from './styles';
 
 import NewOrder from '../../components/NewOrder';
 import Header from '../../components/Header';
 
-import { Container, Product, DivCooker, WrapperOne, WrapperTwo, WrapperTree, IconCooker, IconSearch, IconReturn } from './styles';
 import api from '../../services/api';
-import { Link } from 'react-router-dom';
 
 type Products = {
+	id: number;
 	nameproduct: string
 	name: string;
 	imgIten: string;
@@ -38,9 +39,8 @@ const OrderNew: React.FC = () => {
 			<WrapperTwo>
 				<Link to="/ordersplaced">
 					<IconReturn />
-					<NewOrder name="Novo pedido" />
 				</Link>
-
+				<NewOrder name="Novo pedido" />
 				<DivCooker>
 					<IconCooker />
 					<p>Acompanhe aqui um resumo desta venda.</p>
@@ -49,21 +49,32 @@ const OrderNew: React.FC = () => {
 
 			<WrapperTree>
 				<NewOrder name="Informações para o pedido" />
-				<text>Preencha as informações abaixo para concluir esta venda.</text>
+				<p>Preencha as informações abaixo para concluir esta venda.</p>
 				<span>Passo 1 de 3</span>
-				<div>progreessbar</div>
+
+				<Progreessbar>
+					<div></div>
+				</Progreessbar>
+
 				<h6>O que você está vendendo?</h6>
-				<div>
+
+				<OrderInput>
 					<IconSearch />
 					<input type="text" placeholder="Procure o produto aqui..." />
-				</div>
+				</OrderInput>
 
 				{products.map((product) => (
-					<Product>
-						<h6>{product.nameproduct}</h6>
-						<h6>{product.name}</h6>
-						<img src={product.imgIten} alt="" />
-						<span>{formatter.format(product.price)}</span>
+					<Product key={product.id}>
+						<div>
+							<h6>{product.nameproduct}</h6>
+						</div>
+						<Link to="/orderdetailing">
+							<section>
+								<img src={product.imgIten} alt="" />
+								<h6>{product.name}</h6>
+								<span>{formatter.format(product.price)}</span>
+							</section>
+						</Link>
 					</Product>
 				))}
 			</WrapperTree>
