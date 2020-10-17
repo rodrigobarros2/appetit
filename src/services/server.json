@@ -8,7 +8,7 @@
 		{
 			"id": 2,
 			"name": "Bairam Frootan",
-			"avatar": "https://svgshare.com/i/Kn8.svg"
+			"avatar": "https://svgshare.com/i/Kko.svg"
 		},
 		{
 			"id": 3,
@@ -86,10 +86,10 @@
 	"products": [
 		{
 			"id": 1,
-			"nameproduct" : "cuzcuz",
+			"nameproduct" : "Cuzcuz",
+			"imgIten": "https://svgshare.com/i/KnJ.svg",
 			"name": "Cuzcuz Simples",
 			"price": 2.25,
-			"imgIten": "https://svgshare.com/i/KnJ.svg",
 			"options": [
 				{
 					"id": 1,
@@ -103,9 +103,9 @@
 		},
 		{
 			"id": 2,
+			"imgIten": "https://svgshare.com/i/KmS.svg",
 			"name": "Cuzcuz Completo",
 			"price": 2.25,
-			"imgIten": "https://svgshare.com/i/KmS.svg",
 			"options": [
 				{
 					"id": 1,
@@ -119,10 +119,10 @@
 		},
 		{
 			"id": 3,
-			"nameproduct" : "Paes",
+			"imgIten": "https://svgshare.com/i/Kka.svg",
 			"name": "Pão caseiro",
 			"price": 2.25,
-			"imgIten": "https://svgshare.com/i/Kka.svg",
+			"nameproduct" : "Paes",
 			"options": [
 				{
 					"id": 1,
@@ -136,9 +136,9 @@
 		},
 		{
 			"id": 4,
+			"imgIten": "https://svgshare.com/i/Kne.svg",
 			"name": "Pão caseiro completo",
 			"price": 2.25,
-			"imgIten": "https://svgshare.com/i/Kne.svg",
 			"options": [
 				{
 					"id": 1,
