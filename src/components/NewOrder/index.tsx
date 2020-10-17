@@ -1,8 +1,7 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
 import OrangeLine from '../OrangeLine';
 
-import { Container, IconReturn } from './styles';
+import { Container } from './styles';
 
 type CardProps = {
 	name: string
