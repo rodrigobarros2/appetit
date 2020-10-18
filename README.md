@@ -29,12 +29,10 @@
 - [x] Página de selecionar clientes
 - [x] Página de adicionar informações ao pedido
 - [x] Feedback do pedido realizado
-- [ ] Responsividade 80%
 
 <img src="https://user-images.githubusercontent.com/42853150/96365879-315e0800-111a-11eb-8699-3960b86cb436.PNG"/>
 
 <img src="https://user-images.githubusercontent.com/42853150/96365939-a16c8e00-111a-11eb-8b48-c668a813e562.PNG"/>
-
 
 # :information_source: Como usar
 
@@ -43,6 +41,9 @@
 Para utilizar e inicializar o Server Api, você precisará do NodeJs para instalar o Json Server.
 
 ```sh
+# Instalar Json Server
+$ npm i -g json-server
+
 # Entrar no repositorio:
 $ cd appetit
 
