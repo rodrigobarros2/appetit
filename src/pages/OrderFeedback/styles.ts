@@ -6,10 +6,19 @@ export const Container = styled.div`
 	height: 100%;
 `;
 
-export const GridOne = styled.div`
-`;
+export const GridOne = styled.div``;
 
 export const GridTwo = styled.div`
+
+	p {
+		display:block;
+		margin-top: 30px;
+	}
+
+	button > {
+		margin:20px;
+	}
+
 	margin-top: -100px;
 	text-align: center;
 	display:flex;
