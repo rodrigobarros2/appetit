@@ -8,10 +8,10 @@ type CardProps = {
 	a?: string;
 }
 
-const NewOrder: React.FC<CardProps> = ({ name }) => {
+const NewOrder: React.FC<CardProps> = (props) => {
 	return (
 		<Container>
-			<h3>{name}</h3>
+			<h3>{props}</h3>
 			<OrangeLine />
 		</Container>
 	);
