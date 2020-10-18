@@ -14,12 +14,10 @@
 -  [ReactJS](https://reactjs.org/)
 -  [Redux](https://redux.js.org/)
 -  [Axios](https://github.com/axios/axios)
--  [Immer](https://github.com/immerjs/immer)
--  [styled-components](https://www.styled-components.com/)
-
-<img srg="https://img.shields.io/static/v1?label=<LABEL>&message=<MESSAGE>&color=<COLOR>&style=<STYLE>&logo=<LOGO>"/>
-<h4 align="center"> 
-</h4>
+-  [immer](https://github.com/immerjs/immer)
+-  [Styled components](https://www.styled-components.com/)
+-  [Typescript](https://www.styled-components.com/)
+-  [React Router Dom](https://www.styled-components.com/)
 
 ## **:computer: Features**
 
@@ -31,6 +29,7 @@
 - [x] Página de selecionar clientes
 - [x] Página de adicionar informações ao pedido
 - [x] Feedback do pedido realizado
+- [ ] Responsividade 80%
 
 <img src="https://user-images.githubusercontent.com/42853150/96365879-315e0800-111a-11eb-8699-3960b86cb436.PNG"/>
 
