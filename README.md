@@ -4,16 +4,19 @@
 <img src="https://img.shields.io/badge/react%20-%2320232a.svg?&style=for-the-badge&logo=react&logoColor=%2361DAFB" />
 <img src="https://img.shields.io/badge/typescript%20-%23007ACC.svg?&style=for-the-badge&logo=typescript&logoColor=white" />
 </h4>
-	
-  * [Tabela de Conteudo](#tabela-de-conteudo)
-   * [Instalação](#instalacao)
-   * [Como usar](#como-usar)
-   * [Tecnologias](#tecnologias)
    
 <h6 align="center">
 	Appetit é um sistema de gerenciamento de lanchonete fictício. Foi desenvolvido com o Framework React.Js e tipado com Typescript, No projeto desenvolvi uma api fake que teve como objetivo desenvolver o projeto o mais próximo da realidade utilizando-se das funções assíncronas(async/await), continuarei na manutenção do projeto para total aperfeiçoamento, e assim buscando e aplicando mais conhecimento. Já tive a oportunidade de desenvolver o projeto por volta de um ano atrás, segue o link: https://project-appetit.herokuapp.com/ na constante evolução hoje reconheço a pouca escalabilidade do código realizado no primeiro projeto. Hoje me sinto mais confiante e tentando melhorar a cada dia para entregar um código de qualidade e ocasionalmente conseguir uma oportunidade na área.   
 </h6>
-		
+
+## Technologies
+
+-  [ReactJS](https://reactjs.org/)
+-  [Redux](https://redux.js.org/)
+-  [Axios](https://github.com/axios/axios)
+-  [Immer](https://github.com/immerjs/immer)
+-  [styled-components](https://www.styled-components.com/)
+
 <img srg="https://img.shields.io/static/v1?label=<LABEL>&message=<MESSAGE>&color=<COLOR>&style=<STYLE>&logo=<LOGO>"/>
 <h4 align="center"> 
 </h4>
