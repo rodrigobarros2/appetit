@@ -98,12 +98,12 @@ export const WrapperTree = styled.div`
 		font-size: 16px;
 		line-height: 24px;
 		color: rgba(0, 0, 0, 0.88);
+		background: #FFFFFF;
 
 		&::placeholder {
 			font-size: 16px;
-			line-height: 24px;
 			color: rgba(0, 0, 0, 0.88);
-			background: #FFFFFF;
+			line-height: 24px;
 		}
 	}
 `;
