@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import { Button, Container } from './styles';
 
 interface CardProps {
@@ -7,12 +8,15 @@ interface CardProps {
 }
 
 const ButtonFeedBack: React.FC<CardProps> = (props) => {
-
 	return (
 		<Container>
 			<p>Pedido feito com sucesso!</p>
-			<Button primary>{props.nameBtnOne}</Button>
-			<Button>{props.nameBtnTwoo}</Button>
+			<Link to="/ordersplaced">
+				<Button primary>{props.nameBtnOne}</Button>
+			</Link>
+			<Link to="/ordernew">
+				<Button>{props.nameBtnTwoo}</Button>
+			</Link>
 		</Container>
 	);
 };
