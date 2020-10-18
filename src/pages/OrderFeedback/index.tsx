@@ -1,16 +1,20 @@
 import React from 'react';
+import ButtonFeedBack from '../../components/ButtonFeedBack';
+import Header from '../../components/Header';
+import { CookerIcon } from '../../styles/Icons';
 
-import { Container, WrapperOne, WrapperTwo } from './styles';
+import { Container, GridOne, GridTwo } from './styles';
 
 const OrderFeedback: React.FC = () => {
 	return (
 		<Container>
-			<WrapperOne>
-				<h1>OrderFeedback</h1>
-			</WrapperOne>
-			<WrapperTwo>
-				<h1>OrderFeedback</h1>
-			</WrapperTwo>
+			<GridOne>
+				<Header />
+			</GridOne>
+			<GridTwo>
+				<CookerIcon />
+				<ButtonFeedBack nameBtnOne="voltar para lista de pedidos" nameBtnTwoo="fazer novo pedido" />
+			</GridTwo>
 		</Container>
 	);
 };
