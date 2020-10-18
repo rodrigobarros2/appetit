@@ -10,14 +10,12 @@ interface Order {
 	id: number;
 	saleDate: string;
 	saleValue: number;
-
 	sale: Array<{
 		id: number;
 		name: string;
 		avatar: string;
 		description: string;
 		value: number;
-		i: string;
 	}>
 }
 
