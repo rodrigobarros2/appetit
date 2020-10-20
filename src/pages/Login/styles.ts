@@ -16,14 +16,6 @@ export const Logo = styled(AppetitIcon)`
 	width: 112px;
 	height: 80px;
 	margin-bottom: 40px;
-
-	/* 	> path {
-		fill: #f00;
-	}
-
-	&:hover > path {
-		fill: #ff0;
-	} */
 `;
 
 export const Wrapper = styled.div`
@@ -31,6 +23,11 @@ export const Wrapper = styled.div`
 	flex-direction: column;
 	align-items: center;
 	justify-content: center;
+	width: 432px;
+
+	@media (max-width: 505px) {
+		width: 90%;
+	}
 
 	h3 {
 		margin-bottom: 16px;
@@ -39,8 +36,7 @@ export const Wrapper = styled.div`
 	}
 
 	p {
-		margin-bottom: 115px;
-		width:432px;
+		margin-bottom: 40px;
 		text-align: center;
 		color: rgba(0, 0, 0, 0.54);
 	}

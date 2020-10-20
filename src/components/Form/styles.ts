@@ -1,21 +1,26 @@
 import styled from 'styled-components';
 
 export const Container = styled.div`
+	display: flex;
+    flex-direction: column;
+    align-items: center;
+	width: 100%;
 
 	form {
-		display:flex;
+		width: 100%;
+		display: flex;
 		flex-direction: column;
-		position: relative;
-		margin-bottom: 27px;
+		align-items: center;
 	}
 
 	section {
+		width: 100%;
 		display: flex;
 		align-items: center;
 		flex-direction: column;
 	}
 
-	input {
+	input:first-child {
 		padding: 0 14px;
 		margin-bottom: 24px;
 		width:432px;
@@ -24,12 +29,12 @@ export const Container = styled.div`
 		border: 1px solid rgba(0, 0, 0, 0.56);
 		border-radius: 5px;
 		font-size: 16px;
-	}
+		}
 
 	a:first-child {
 		position: relative;
 		display:block;
-		margin: 60px 0 30px 0;
+		margin: 13px 0 37px 0;
 		text-decoration: none;
 		font-weight: 600;
 		font-size: 12px;
@@ -52,16 +57,16 @@ export const Button = styled.button`
 `;
 
 /* OutlinedInput */
-
 export const OutlinedInput = styled.div`
-	position: absolute;
-	top: 50%;
-	left: 50%;
-	transform: translate(-50%, -50%)
+	width:100%;
+
+	input {
+		width:100%;
 	}
 
 	.input-group {
 		position: relative;
+		width: 100%;
 	}
 
 	.input-group .input-area {
@@ -70,6 +75,7 @@ export const OutlinedInput = styled.div`
 		padding: 16px 13px;
 		font-size: 18px;
 		border-radius: 5px;
+		width: 100%;
 	}
 
 	.input-group .input-area:valid + .label {
@@ -81,7 +87,6 @@ export const OutlinedInput = styled.div`
 
 	.input-group .input-area:focus {
 		border: 2px solid var(--orange);
-
 	}
 
 	.input-group .label {
