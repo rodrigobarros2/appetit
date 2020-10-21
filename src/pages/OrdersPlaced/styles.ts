@@ -7,7 +7,6 @@ export const Container = styled.div`
 	grid-template-columns: 342px 1fr;
 	grid-template-rows: 1fr;
 
-
 	@media (max-width: 1000px) {
 		display: grid;
 		grid-template-columns: 1fr;
@@ -17,7 +16,7 @@ export const Container = styled.div`
 
 export const WrapperOne = styled.div`
 	@media (max-width: 1000px) {
-			display:none;
+		display:none;
 	}
 `;
 
@@ -43,7 +42,6 @@ export const DateInformation = styled.div`
 		color: #6E6E6E;
 		font-weight: 200;
 	}
-
 `;
 
 export const OrderInformation = styled.div`
@@ -65,7 +63,6 @@ export const OrderInformation = styled.div`
 		margin-right:17px;
 	}
 `;
-
 
 export const Button = styled.div`
 	width: 100%;
@@ -90,7 +87,6 @@ export const Button = styled.div`
 	svg {
 		margin: 20px;
 	}
-
 `;
 
 export const FilterOrder = styled.div`
