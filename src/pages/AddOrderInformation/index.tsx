@@ -8,7 +8,7 @@ import api from '../../services/api';
 import Header from '../../components/Header';
 import NewOrder from '../../components/NewOrder';
 import Calendaricon from '../../assets/calendar.svg';
-import Cuzcuz from '../../components/Cuzcuz';
+import OrderBox from '../../components/OrderBox';
 import BarGray from '../../components/BarGray';
 
 const AddOrderInformation: React.FC = () => {
@@ -41,7 +41,7 @@ const AddOrderInformation: React.FC = () => {
 						<IconReturn />
 					</Link>
 					<NewOrder name="Novo pedido" />
-					<Cuzcuz />
+					<OrderBox />
 				</ProductWrapping>
 				<BarGray />
 				<ClientsWrapping>
