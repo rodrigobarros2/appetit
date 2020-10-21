@@ -1,5 +1,4 @@
 import React, { useState, useEffect } from 'react';
-
 import Header from '../../components/Header';
 import { Container, WrapperOne, WrapperTwo, Button, IconSearch, DateInformation, OrderInformation, IconPlus, IconFilter, FilterOrder } from './styles';
 import api from "../../services/api";
