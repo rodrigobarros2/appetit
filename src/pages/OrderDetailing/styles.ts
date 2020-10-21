@@ -22,14 +22,7 @@ export const WrapperOne = styled.div`
 `;
 
 export const WrapperTwo = styled.div`
-
-@media (max-width: 900px) {
-		display: none;
-		grid-template-columns: 1fr;
-	}
-
 	padding: 72px 40px;
-
 	background: var(--white);
 
 	p {
@@ -37,6 +30,11 @@ export const WrapperTwo = styled.div`
 		font-size: 16px;
 		line-height: 24px;
 		color: rgba(0, 0, 0, 0.54);
+	}
+
+	@media (max-width: 900px) {
+		display: none;
+		grid-template-columns: 1fr;
 	}
 `;
 
@@ -140,7 +138,6 @@ export const OrderCounter = styled.div`
 	box-shadow: 9px 0px 10px rgba(0, 0, 0, 0.25);
 `;
 
-
 export const Counter = styled.div`
 	display: flex;
 	align-items: center;
@@ -157,7 +154,6 @@ export const Counter = styled.div`
 		margin-top: -6px;
 		font-family: Open Sans;
 		font-style: normal;
-
 	}
 
 	button:nth-child(3) {
@@ -167,7 +163,6 @@ export const Counter = styled.div`
 		font-style: normal;
 	}
 `;
-
 
 export const BtnCounter = styled.div`
 	display:flex;
