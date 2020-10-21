@@ -6,7 +6,6 @@ export const Container = styled.div`
 	grid-template-columns: 342px 1fr;
 	grid-template-rows: 1fr;
 
-
 	@media (max-width: 1000px) {
 		display: grid;
 		grid-template-columns: 1fr;
@@ -16,9 +15,10 @@ export const Container = styled.div`
 
 export const WrapperOne = styled.div`
 	@media (max-width: 1000px) {
-				display:none;
-		}
+		display:none;
+	}
 `;
+
 export const WrapperTwo = styled.div`
 	padding: 90px 40px 0px;
 
