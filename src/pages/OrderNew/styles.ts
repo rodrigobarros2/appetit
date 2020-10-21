@@ -4,28 +4,24 @@ import { ReturnIcon, CookerIcon, SearchIcon } from '../../styles/Icons'
 export const Container = styled.div`
 	display: grid;
 	grid-template-columns: 342px 1fr 1fr;
-	min-height: 100vh;
-	max-height: 100vh;
-	min-height: 100%;
-	max-height: 100%;
 
-	@media (max-width: 1000px) {
+	@media (max-width: 1150px) {
 		display: grid;
 		grid-template-columns: 1fr 1fr;
+	}
+	@media (max-width: 800px) {
+		display: grid;
+		grid-template-columns: 1fr;
 	}
 `;
 
 export const WrapperOne = styled.div`
-	@media (max-width: 1000px) {
-			display:none;
+	@media (max-width: 1150px) {
+		display:none;
 	}
 `;
 
 export const WrapperTwo = styled.div`
-	@media (max-width: 800px) {
-			display:none;
-	}
-
 	padding: 72px 40px;
 	background: var(--white);
 
@@ -38,6 +34,10 @@ export const WrapperTwo = styled.div`
 		font-size: 16px;
 		line-height: 24px;
 		color: rgba(0, 0, 0, 0.54);
+	}
+
+	@media (max-width: 800px) {
+			display:none;
 	}
 `;
 
@@ -116,7 +116,6 @@ export const OrderInput = styled.div`
 	padding: 10px 0;
 	border-bottom: 1px solid rgba(0, 0, 0, 0.34);
 	display:flex;
-
 
 	input {
 		padding: 0 11px;
