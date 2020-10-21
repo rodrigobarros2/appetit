@@ -1,10 +1,32 @@
 import styled from 'styled-components';
 
-
 export const Container = styled.div`
 	display: grid;
 	grid-template-columns: 342px 1fr 1fr;
 	height: 100%;
+
+	@media (max-width: 1150px) {
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+	}
+	@media (max-width: 800px) {
+		display: grid;
+		grid-template-columns: 1fr;
+	}
+`;
+
+export const WrapperOne = styled.div`
+	@media (max-width: 1150px) {
+			display:none;
+	}
+`;
+
+export const WrapperTwo = styled.div`
+	background: var(--white);
+
+	@media (max-width: 800px) {
+		display:none;
+	}
 `;
 
 export const ContentOne = styled.div`
@@ -54,21 +76,6 @@ export const ContentTwo = styled.div`
 	}
 `;
 
-export const Progreessbar = styled.div`
-	margin-top: 8px;
-	border-radius: 5px;
-	display: flex;
-	width:100%;
-	height: 12px;
-	background: rgba(0, 0, 0, 0.08);
-
-	div:nth-child(1)  {
-		width: 66.6%;
-		background: #FF8822;
-		border-radius: 5px 5px;
-	}
-`;
-
 export const ContentTree = styled.div`
 	padding: 24px 40px;
 	display: flex;
@@ -87,6 +94,21 @@ export const ContentTree = styled.div`
 	}
 `;
 
+export const Progreessbar = styled.div`
+	margin-top: 8px;
+	border-radius: 5px;
+	display: flex;
+	width:100%;
+	height: 12px;
+	background: rgba(0, 0, 0, 0.08);
+
+	div:nth-child(1)  {
+		width: 66.6%;
+		background: #FF8822;
+		border-radius: 5px 5px;
+	}
+`;
+
 export const Clients = styled.div`
 	display:flex;
 	padding: 10px 0;
@@ -99,10 +121,6 @@ export const Clients = styled.div`
 	}
 `;
 
-export const WrapperOne = styled.div`
-
-`;
-
 export const WrapperTree = styled.div`
 	padding: 40px 40px 0 40px;
 	height: 100%;
@@ -113,7 +131,6 @@ export const WrapperTree = styled.div`
 		a{
 			color: inherit;
 		}
-
 	}
 
 	> h6 {
@@ -121,6 +138,3 @@ export const WrapperTree = styled.div`
 	}
 `;
 
-export const WrapperTwo = styled.div`
-	background: var(--white);
-`;
