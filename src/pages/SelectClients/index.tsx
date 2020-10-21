@@ -7,7 +7,7 @@ import { ReturnIcon } from '../../styles/Icons';
 import { Clients, Container, ContentOne, ContentTree, ContentTwo, Progreessbar, WrapperOne, WrapperTree, WrapperTwo } from './styles';
 import { IconSearch, OrderInput } from '../OrderNew/styles';
 import api from '../../services/api';
-import Cuzcuz from '../../components/Cuzcuz';
+import OrderBox from '../../components/OrderBox';
 
 interface Clients {
 	id: number;
@@ -29,7 +29,6 @@ const SelectClients: React.FC = () => {
 	}, []);
 	return (
 
-
 		<Container>
 			<WrapperOne>
 				<Header />
@@ -41,7 +40,7 @@ const SelectClients: React.FC = () => {
 						<ReturnIcon />
 					</Link>
 					<NewOrder name="Novo pedido" />
-					<Cuzcuz />
+					<OrderBox />
 				</ContentOne>
 
 				<ContentTwo>
