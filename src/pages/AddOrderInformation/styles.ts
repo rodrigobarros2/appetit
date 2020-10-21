@@ -15,8 +15,17 @@ export const Container = styled.div`
 	}
 `;
 
-export const GridOne = styled.div``;
-export const GridTwo = styled.div``;
+export const GridOne = styled.div`
+	@media (max-width: 1200px) {
+			display:none;
+	}
+`;
+export const GridTwo = styled.div`
+
+	@media (max-width: 900px) {
+		display:none;
+	}
+`;
 
 export const GridTree = styled.div`
 	padding: 51px 40px 0px;
