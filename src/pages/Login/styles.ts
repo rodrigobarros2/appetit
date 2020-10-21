@@ -25,10 +25,6 @@ export const Wrapper = styled.div`
 	justify-content: center;
 	width: 432px;
 
-	@media (max-width: 505px) {
-		width: 90%;
-	}
-
 	h3 {
 		margin-bottom: 16px;
 		text-align: center;
@@ -46,5 +42,9 @@ export const Wrapper = styled.div`
 		margin-top: 64px;
 		font-size: 16px;
 		line-height: 24px;
+	}
+
+	@media (max-width: 505px) {
+		width: 90%;
 	}
 `;
