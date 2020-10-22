@@ -4,6 +4,7 @@ import { ReturnIcon, CookerIcon, SearchIcon } from '../../styles/Icons'
 export const Container = styled.div`
 	display: grid;
 	grid-template-columns: 342px 1fr 1fr;
+	height: 100%;
 
 	@media (max-width: 1150px) {
 		display: grid;
