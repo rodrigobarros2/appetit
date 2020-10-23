@@ -125,6 +125,19 @@ export const WrapperTree = styled.div`
 	padding: 40px 40px 0 40px;
 	height: 100%;
 
+	p{
+		font-size: 16px;
+		color: rgba(0, 0, 0, 0.56);
+		margin-top: 8px;
+	}
+
+	span {
+		display: block;
+		margin-top: 24px;
+		font-size: 16px;
+		color: rgba(0, 0, 0, 0.64);
+	}
+
 	section {
 		margin-top: 8px;
 
