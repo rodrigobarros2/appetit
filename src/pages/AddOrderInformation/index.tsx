@@ -74,12 +74,12 @@ const AddOrderInformation: React.FC = () => {
 				<h6>Qual o status de pagamento?</h6>
 				<InputRadio>
 					<div>
-						<input type="radio" />
-						<label htmlFor="">Não está pago</label>
+						<input type="radio" id="notPay" />
+						<label htmlFor="notPay">Não está pago</label>
 					</div>
 					<div>
-						<input type="radio" />
-						<label htmlFor="">Já está pago</label>
+						<input type="radio" id="pay" />
+						<label htmlFor="pay">Já está pago</label>
 					</div>
 				</InputRadio>
 				<h6>Em qual data foi realizado?</h6>
