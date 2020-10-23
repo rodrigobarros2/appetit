@@ -33,7 +33,6 @@ export const OrderInformation = styled.div`
 	h6 {
 		font-weight: 600;
 		font-size: 16px;
-		line-height: 24px;
 		color: #000000;
 	}
 
@@ -58,7 +57,6 @@ export const OrderInformation = styled.div`
 
 		span {
 			font-size: 12px;
-			line-height: 18px;
 			color: rgba(0, 0, 0, 0.64);
 		}
 	}
