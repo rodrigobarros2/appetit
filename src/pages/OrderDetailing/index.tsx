@@ -5,11 +5,13 @@ import NewOrder from '../../components/NewOrder';
 import { IconReturn } from '../../components/NewOrder/styles';
 import { DivCooker, IconCooker } from '../OrderNew/styles';
 import CuzcuzIcon from '../../assets/cuzcuz.svg';
+import RadioButtonOn from '../../assets/radio-button-on.svg';
 
 import { Container, WrapperOne, InputRadio, WrapperTree, WrapperTwo, OrderCounter, Counter, BtnCounter, ContainerTree, WrapperCounter, Bar } from './styles';
 
 const OrderDetailing: React.FC = () => {
 	const [count, setCount] = useState(1);
+	const [option, setOption] = useState('');
 	return (
 		<Container>
 			<WrapperOne>
@@ -25,7 +27,6 @@ const OrderDetailing: React.FC = () => {
 					<p>Acompanhe aqui um resumo desta venda.</p>
 				</DivCooker>
 			</WrapperTwo>
-
 			<ContainerTree>
 				<WrapperTree>
 					<IconReturn />
@@ -42,12 +43,16 @@ const OrderDetailing: React.FC = () => {
 					<p>Escolha dentre as opções de massas abaixo.</p>
 					<InputRadio>
 						<div>
-							<input type="radio" />
-							<label htmlFor="">Milho</label>
+							<img src={RadioButtonOn} alt="" />
+							<input id="milho" type="radio" value={option}
+								onChange={(e) => setOption(e.target.value)} />
+							<label htmlFor="milho">Milho</label>
 						</div>
 						<div>
-							<input type="radio" />
-							<label htmlFor="">Arroz</label>
+							<img src={RadioButtonOn} alt="" />
+							<input id="arroz" type="radio" value={option}
+								onChange={(e) => setOption(e.target.value)} />
+							<label htmlFor="arroz">Arroz</label>
 						</div>
 					</InputRadio>
 					<Bar />
