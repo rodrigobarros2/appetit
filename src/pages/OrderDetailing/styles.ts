@@ -39,9 +39,16 @@ export const WrapperTwo = styled.div`
 `;
 
 export const WrapperTree = styled.div`
-	padding: 72px 40px;
+	padding: 72px 40px 12px;
 	position: relative;
 	overflow: hidden;
+
+	p{
+		font-size: 16px;
+		line-height: 24px;
+		color: rgba(0, 0, 0, 0.56);
+		margin-top: 8px;
+	}
 
 	div:nth-child(4) {
 		display: flex;
@@ -108,6 +115,7 @@ export const WrapperTree = styled.div`
 
 export const InputRadio = styled.div`
 	margin-top: 16px;
+	color: rgba(0, 0, 0, 0.56);
 
 	div {
 		display:flex;
@@ -117,11 +125,20 @@ export const InputRadio = styled.div`
 		box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.25);
 		border-radius: 5px;
 		height: 56px;
+		cursor: pointer;
 
 		input {
 			padding: 19px;
 			margin: 19px;
+			cursor: pointer;
 		}
+
+		label {
+			padding: 19px 0;
+			width: 100%;
+			cursor: pointer;
+		}
+
 	}
 `;
 
@@ -134,7 +151,7 @@ export const OrderCounter = styled.div`
 	align-items: center;
 	justify-content: space-between;
 	background: #fafafa;
-	padding: 10px 0;
+	padding: 10px 40px;
 	box-shadow: 9px 0px 10px rgba(0, 0, 0, 0.25);
 `;
 
@@ -142,7 +159,6 @@ export const Counter = styled.div`
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	margin-left: 15px;
 
 	button {
 		padding: 10px 15px;;
