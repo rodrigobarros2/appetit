@@ -31,12 +31,15 @@ export const GridTree = styled.div`
 	padding: 51px 40px 0px;
 
 	> p {
-		margin-top: 24px;
+		margin-top: 22px;
+		font-size: 16px;
+		color: rgba(0, 0, 0, 0.56);
 	}
 
 	> span {
 		display:block;
 		margin-top: 24px;
+		color: rgba(0, 0, 0, 0.56);
 	}
 
 	> h6 {
