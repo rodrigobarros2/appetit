@@ -3,13 +3,15 @@ import React from 'react';
 import Routes from './routes';
 import GlobalStyles from './styles/GlobalStyles';
 
-function App() {
-	return (
-		<>
+import { CountProvider } from './context/CountContext';
+
+const App: React.FC = () => (
+	<>
+		<CountProvider>
 			<Routes />
-			<GlobalStyles />
-		</>
-	);
-}
+		</CountProvider>
+		<GlobalStyles />
+	</>
+)
 
 export default App;
