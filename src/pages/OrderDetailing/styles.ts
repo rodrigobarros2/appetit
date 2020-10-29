@@ -4,6 +4,7 @@ export const Container = styled.div`
 	display: grid;
 	grid-template-columns: 342px 1fr 1fr;
 	height:100%;
+	overflow: hidden;
 
 	@media (max-width: 1200px) {
 		display: grid;
@@ -138,7 +139,6 @@ export const InputRadio = styled.div`
 			width: 100%;
 			cursor: pointer;
 		}
-
 	}
 `;
 
@@ -224,6 +224,5 @@ export const Bar = styled.div`
 `;
 
 export const ContainerTree = styled.div`
-	display: grid;
-	position: relative;
+	overflow-y: scroll;
 `;

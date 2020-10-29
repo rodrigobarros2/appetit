@@ -5,6 +5,7 @@ export const Container = styled.div`
 	display: grid;
 	grid-template-columns: 342px 1fr 1fr;
 	height: 100%;
+	overflow:hidden;
 
 	@media (max-width: 1150px) {
 		display: grid;
@@ -54,6 +55,7 @@ export const DivCooker = styled.div`
 
 export const WrapperTree = styled.div`
 	padding: 95px 40px 0px 40px;
+	overflow-y: scroll;
 	background: var(--gray);
 
 	> span {
@@ -78,7 +80,6 @@ export const WrapperTree = styled.div`
 	div:nth-child(0) {
 		margin-top: 84px;
 	}
-
 `;
 
 export const Product = styled.div`

@@ -4,6 +4,7 @@ export const Container = styled.div`
 	display: grid;
 	grid-template-columns: 342px 1fr 1fr;
 	height: 100%;
+	overflow: hidden;
 
 	@media (max-width: 1150px) {
 		display: grid;
@@ -124,6 +125,8 @@ export const Clients = styled.div`
 export const WrapperTree = styled.div`
 	padding: 40px 40px 0 40px;
 	height: 100%;
+
+	overflow-y: scroll;
 
 	p{
 		font-size: 16px;
