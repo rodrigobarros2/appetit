@@ -43,13 +43,13 @@ const OrderDetailing: React.FC = () => {
 					<p>Escolha dentre as opções de massas abaixo.</p>
 					<InputRadio>
 						<div>
-							<img src={RadioButtonOn} alt="" />
+							{/* <img src={RadioButtonOn} alt="" /> */}
 							<input id="milho" type="radio" value={option}
 								onChange={(e) => setOption(e.target.value)} />
 							<label htmlFor="milho">Milho</label>
 						</div>
 						<div>
-							<img src={RadioButtonOn} alt="" />
+							{/* <img src={RadioButtonOn} alt="" /> */}
 							<input id="arroz" type="radio" value={option}
 								onChange={(e) => setOption(e.target.value)} />
 							<label htmlFor="arroz">Arroz</label>
@@ -75,7 +75,6 @@ const OrderDetailing: React.FC = () => {
 						</Link>
 					</OrderCounter>
 				</WrapperCounter>
-
 			</ContainerTree>
 		</Container>
 	);
