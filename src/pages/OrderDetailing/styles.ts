@@ -41,7 +41,8 @@ export const WrapperTwo = styled.div`
 
 export const WrapperTree = styled.div`
 	padding: 72px 40px 12px;
-	overflow-x: hidden;
+	position: relative;
+	overflow: hidden;
 
 	p{
 		font-size: 16px;
@@ -223,6 +224,5 @@ export const Bar = styled.div`
 `;
 
 export const ContainerTree = styled.div`
-	display:grid;
-	overflow-y: auto;
+	overflow-y: scroll;
 `;

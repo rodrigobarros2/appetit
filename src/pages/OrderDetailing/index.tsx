@@ -1,24 +1,17 @@
-import React, { useState, useContext } from 'react';
-import { DivCooker, IconCooker } from '../OrderNew/styles';
+import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
-import { IconReturn } from '../../components/NewOrder/styles';
 import Header from '../../components/Header';
 import NewOrder from '../../components/NewOrder';
+import { IconReturn } from '../../components/NewOrder/styles';
+import { DivCooker, IconCooker } from '../OrderNew/styles';
 import CuzcuzIcon from '../../assets/cuzcuz.svg';
 import RadioButtonOn from '../../assets/radio-button-on.svg';
 
 import { Container, WrapperOne, InputRadio, WrapperTree, WrapperTwo, OrderCounter, Counter, BtnCounter, ContainerTree, WrapperCounter, Bar } from './styles';
 
-import { CountContext } from '../../context/CountContext';
-
 const OrderDetailing: React.FC = () => {
-
-	const { numero } = useContext(CountContext);
-	console.log(numero);
-
 	const [count, setCount] = useState(1);
 	const [option, setOption] = useState('');
-
 	return (
 		<Container>
 			<WrapperOne>
@@ -33,7 +26,6 @@ const OrderDetailing: React.FC = () => {
 					<IconCooker />
 					<p>Acompanhe aqui um resumo desta venda.</p>
 				</DivCooker>
-
 			</WrapperTwo>
 			<ContainerTree>
 				<WrapperTree>
@@ -83,6 +75,7 @@ const OrderDetailing: React.FC = () => {
 						</Link>
 					</OrderCounter>
 				</WrapperCounter>
+
 			</ContainerTree>
 		</Container>
 	);
