@@ -5,34 +5,34 @@ import { AppetitIcon, MenuIcon, UserIcon, Indicador } from '../../styles/Icons';
 export const Container = styled.div`
 	background: var(--orange);
 	box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.25);
-	height:100%;
+	height: 100%;
 	position: fixed;
-    width: 342px;
+	width: 342px;
 `;
 
 export const Wrapper = styled.div`
-	display:flex;
+	display: flex;
 	height: 100%;
 	flex-direction: column;
 	justify-content: space-between;
 
 	div {
-		display:flex;
+		display: flex;
 		justify-content: center;
 	}
 
-	ul{
+	ul {
 		flex-grow: 1;
 		cursor: pointer;
-		list-style:none;
-		display:flex;
+		list-style: none;
+		display: flex;
 		text-transform: uppercase;
 		flex-direction: column;
-		background:var(--orange);
+		background: var(--orange);
 	}
 
 	li {
-		display:flex;
+		display: flex;
 		align-items: center;
 		padding: 10px;
 		margin: 2px 0;
@@ -42,32 +42,32 @@ export const Wrapper = styled.div`
 		font-size: 14px;
 		line-height: 22px;
 
-		&:first-child{
+		&:first-child {
 			background: white;
 			color: var(--orange);
 			line-height: 2.5;
 		}
 
-		&:nth-child(2){
+		&:nth-child(2) {
 			color: var(--white);
 			padding-left: 60px;
 		}
 
-		&:nth-child(3){
+		&:nth-child(3) {
 			padding-left: 79px;
 		}
 
-		&:nth-child(4){
+		&:nth-child(4) {
 			padding-top: 20px;
 		}
 	}
 
-	p{
+	p {
 		width: 100%;
 		font-size: 12px;
 		line-height: 18px;
 		font-weight: 400;
-		text-align:center;
+		text-align: center;
 		margin-bottom: 40px;
 		color: var(--white);
 	}
@@ -97,4 +97,3 @@ export const InconIndicador = styled(Indicador)`
 		fill: var(--orange);
 	}
 `;
-

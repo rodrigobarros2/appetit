@@ -18,7 +18,7 @@ export const Container = styled.div`
 
 export const WrapperOne = styled.div`
 	@media (max-width: 1150px) {
-			display:none;
+		display: none;
 	}
 `;
 
@@ -26,7 +26,7 @@ export const WrapperTwo = styled.div`
 	background: var(--white);
 
 	@media (max-width: 800px) {
-		display:none;
+		display: none;
 	}
 `;
 
@@ -34,11 +34,11 @@ export const ContentOne = styled.div`
 	padding: 40px 40px 0 40px;
 
 	h4 {
-		margin-top:24px;
+		margin-top: 24px;
 	}
 
 	span {
-		display:block;
+		display: block;
 		margin-top: 16px;
 		font-size: 16px;
 		line-height: 24px;
@@ -58,7 +58,7 @@ export const ContentOne = styled.div`
 		}
 
 		h6 {
-			flex:1;
+			flex: 1;
 		}
 
 		img {
@@ -70,7 +70,7 @@ export const ContentOne = styled.div`
 export const ContentTwo = styled.div`
 	margin-top: 16px;
 
-	div{
+	div {
 		width: 100%;
 		height: 8px;
 		background: rgba(0, 0, 0, 0.08);
@@ -99,19 +99,19 @@ export const Progreessbar = styled.div`
 	margin-top: 8px;
 	border-radius: 5px;
 	display: flex;
-	width:100%;
+	width: 100%;
 	height: 12px;
 	background: rgba(0, 0, 0, 0.08);
 
-	div:nth-child(1)  {
+	div:nth-child(1) {
 		width: 66.6%;
-		background: #FF8822;
+		background: #ff8822;
 		border-radius: 5px 5px;
 	}
 `;
 
 export const Clients = styled.div`
-	display:flex;
+	display: flex;
 	padding: 10px 0;
 	align-items: center;
 	border-bottom: 1px solid rgba(0, 0, 0, 0.08);
@@ -128,7 +128,7 @@ export const WrapperTree = styled.div`
 
 	overflow-y: scroll;
 
-	p{
+	p {
 		font-size: 16px;
 		color: rgba(0, 0, 0, 0.56);
 		margin-top: 8px;
@@ -144,7 +144,7 @@ export const WrapperTree = styled.div`
 	section {
 		margin-top: 8px;
 
-		a{
+		a {
 			color: inherit;
 		}
 	}
@@ -153,4 +153,3 @@ export const WrapperTree = styled.div`
 		margin-top: 24px;
 	}
 `;
-

@@ -1,9 +1,20 @@
 import React, { useState, useEffect } from 'react';
-import Header from '../../components/Header';
-import { Container, WrapperOne, WrapperTwo, Button, IconSearch, DateInformation, OrderInformation, IconPlus, IconFilter, FilterOrder } from './styles';
-import api from "../../services/api";
-import OrangeLine from '../../components/OrangeLine';
 import { Link } from 'react-router-dom';
+import Header from '../../components/Header';
+import {
+	Container,
+	WrapperOne,
+	WrapperTwo,
+	Button,
+	IconSearch,
+	DateInformation,
+	OrderInformation,
+	IconPlus,
+	IconFilter,
+	FilterOrder
+} from './styles';
+import api from '../../services/api';
+import OrangeLine from '../../components/OrangeLine';
 
 interface Order {
 	id: number;
@@ -15,7 +26,7 @@ interface Order {
 		avatar: string;
 		description: string;
 		value: number;
-	}>
+	}>;
 }
 
 const OrdersPlaced: React.FC = () => {
@@ -23,14 +34,17 @@ const OrdersPlaced: React.FC = () => {
 
 	useEffect(() => {
 		async function loadApi() {
-			const response = await api.get("orders");
+			const response = await api.get('orders');
 			setOrders(response.data);
 			console.log(response.data);
 		}
 		loadApi();
 	}, []);
 
-	const formatter = new Intl.NumberFormat('pt-BR', { style: 'currency', currency: 'BRL' });
+	const formatter = new Intl.NumberFormat('pt-BR', {
+		style: 'currency',
+		currency: 'BRL'
+	});
 
 	return (
 		<Container>
@@ -50,14 +64,17 @@ const OrdersPlaced: React.FC = () => {
 
 				<FilterOrder>
 					<IconSearch />
-					<input type="text" placeholder="Procure o pedido aqui..."></input>
+					<input type="text" placeholder="Procure o pedido aqui..." />
 					<IconFilter />
 				</FilterOrder>
 
-				{orders.map((order) => (
+				{orders.map(order => (
 					<div key={order.id}>
 						<DateInformation>
-							<h6>{order.saleDate},<span> Você vendeu </span>{formatter.format(order.saleValue)}</h6>
+							<h6>
+								{order.saleDate},<span> Você vendeu </span>
+								{formatter.format(order.saleValue)}
+							</h6>
 						</DateInformation>
 
 						<Link to="/orderdetails">
@@ -69,7 +86,6 @@ const OrdersPlaced: React.FC = () => {
 									<p>{order.sale[0].description}</p>
 								</div>
 								<b>{formatter.format(order.sale[0].value)}</b>
-
 							</OrderInformation>
 
 							<OrderInformation>
@@ -83,11 +99,9 @@ const OrdersPlaced: React.FC = () => {
 						</Link>
 					</div>
 				))}
-
-			</WrapperTwo >
-		</Container >
+			</WrapperTwo>
+		</Container>
 	);
 };
 
 export default OrdersPlaced;
-

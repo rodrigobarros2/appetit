@@ -1,6 +1,18 @@
 import React, { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
-import { Container, Product, DivCooker, OrderInput, WrapperOne, WrapperTwo, WrapperTree, IconCooker, IconSearch, IconReturn, Progreessbar } from './styles';
+import {
+	Container,
+	Product,
+	DivCooker,
+	OrderInput,
+	WrapperOne,
+	WrapperTwo,
+	WrapperTree,
+	IconCooker,
+	IconSearch,
+	IconReturn,
+	Progreessbar
+} from './styles';
 
 import NewOrder from '../../components/NewOrder';
 import Header from '../../components/Header';
@@ -9,26 +21,28 @@ import api from '../../services/api';
 
 type Products = {
 	id: number;
-	nameproduct: string
+	nameproduct: string;
 	name: string;
 	imgIten: string;
 	price: number;
-}
+};
 
 const OrderNew: React.FC = () => {
-
 	const [products, setProducts] = useState<Products[]>([]);
 
 	useEffect(() => {
 		async function loadApi() {
-			const response = await api.get("products");
+			const response = await api.get('products');
 			setProducts(response.data);
 			console.log(response.data);
 		}
 		loadApi();
 	}, []);
 
-	const formatter = new Intl.NumberFormat('pt-BR', { style: 'currency', currency: 'BRL' });
+	const formatter = new Intl.NumberFormat('pt-BR', {
+		style: 'currency',
+		currency: 'BRL'
+	});
 
 	return (
 		<Container>
@@ -53,17 +67,20 @@ const OrderNew: React.FC = () => {
 				<span>Passo 1 de 3</span>
 
 				<Progreessbar>
-					<div></div>
+					<div />
 				</Progreessbar>
 
 				<h6>O que você está vendendo?</h6>
 
 				<OrderInput>
 					<IconSearch />
-					<input type="text" placeholder="Procure o produto aqui..." />
+					<input
+						type="text"
+						placeholder="Procure o produto aqui..."
+					/>
 				</OrderInput>
 
-				{products.map((product) => (
+				{products.map(product => (
 					<Product key={product.id}>
 						<div>
 							<h6>{product.nameproduct}</h6>

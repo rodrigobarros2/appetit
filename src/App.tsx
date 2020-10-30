@@ -12,6 +12,6 @@ const App: React.FC = () => (
 		</CountProvider>
 		<GlobalStyles />
 	</>
-)
+);
 
 export default App;

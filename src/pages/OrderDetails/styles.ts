@@ -15,15 +15,15 @@ export const Container = styled.div`
 
 export const WrapperOne = styled.div`
 	@media (max-width: 1000px) {
-		display:none;
+		display: none;
 	}
 `;
 
 export const WrapperTwo = styled.div`
 	padding: 90px 40px 0px;
 
-	a{
-		color:inherit;
+	a {
+		color: inherit;
 	}
 `;
 
@@ -38,10 +38,10 @@ export const OrderInformation = styled.div`
 
 	div {
 		margin-top: 14px;
-		display:flex;
+		display: flex;
 		height: 74px;
 		align-items: center;
-		background: #FFFFFF;
+		background: #ffffff;
 		box-shadow: 0px 0.5px 10px rgba(0, 0, 0, 0.1);
 		border-radius: 5px;
 

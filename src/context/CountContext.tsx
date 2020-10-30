@@ -4,7 +4,9 @@ interface CountContextState {
 	numero: number;
 }
 
-export const CountContext = createContext<CountContextState>({} as CountContextState);
+export const CountContext = createContext<CountContextState>(
+	{} as CountContextState
+);
 
 export const CountProvider: React.FC = ({ children }) => {
 	return (
@@ -12,4 +14,4 @@ export const CountProvider: React.FC = ({ children }) => {
 			{children}
 		</CountContext.Provider>
 	);
-}
+};

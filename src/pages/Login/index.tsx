@@ -14,9 +14,7 @@ const Login: React.FC = () => (
 				quanto isso pode ajudar no seu dia.
 			</p>
 			<Form />
-			<span>
-				Infoway Gestão em Saúde ©, 2019.
-			</span>
+			<span>Infoway Gestão em Saúde ©, 2019.</span>
 		</Wrapper>
 	</Container>
 );

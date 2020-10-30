@@ -1,15 +1,27 @@
 import React, { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
-import { Clients } from '../SelectClients/styles';
 import { IconReturn } from '../../components/NewOrder/styles';
 import { InputRadio } from '../OrderDetailing/styles';
-import { Container, GridOne, TotalWrapping, ClientsWrapping, GridTwo, ProductWrapping, GridTree, Progreessbar, SelectDate, ButtonFinish } from './styles';
+import { Clients } from '../SelectClients/styles';
 import api from '../../services/api';
 import Header from '../../components/Header';
 import NewOrder from '../../components/NewOrder';
 import Calendaricon from '../../assets/calendar.svg';
 import OrderBox from '../../components/OrderBox';
 import BarGray from '../../components/BarGray';
+
+import {
+	Container,
+	GridOne,
+	TotalWrapping,
+	ClientsWrapping,
+	GridTwo,
+	ProductWrapping,
+	GridTree,
+	Progreessbar,
+	SelectDate,
+	ButtonFinish
+} from './styles';
 
 const AddOrderInformation: React.FC = () => {
 	interface Clients {
@@ -22,7 +34,7 @@ const AddOrderInformation: React.FC = () => {
 
 	useEffect(() => {
 		async function loadApi() {
-			const response = await api.get("clients");
+			const response = await api.get('clients');
 			setClients(response.data);
 			console.log(response.data);
 		}
@@ -47,9 +59,9 @@ const AddOrderInformation: React.FC = () => {
 				<ClientsWrapping>
 					<span>Clients</span>
 					<section>
-						{clients.map((client) => (
+						{clients.map(client => (
 							<Link to="addorderinformation" key={client.id}>
-								<Clients >
+								<Clients>
 									<img src={client.avatar} alt="" />
 									<h6>{client.name}</h6>
 								</Clients>
@@ -69,17 +81,21 @@ const AddOrderInformation: React.FC = () => {
 				<p>Preencha as informações abaixo para concluir esta venda.</p>
 				<span>Passo 3 de 3</span>
 				<Progreessbar>
-					<div></div>
+					<div />
 				</Progreessbar>
 				<h6>Qual o status de pagamento?</h6>
 				<InputRadio>
 					<div>
-						<input type="radio" id="notPay" />
-						<label htmlFor="notPay">Não está pago</label>
+						<label htmlFor="notPay">
+							<input type="radio" id="notPay" />
+							Não está pago
+						</label>
 					</div>
 					<div>
-						<input type="radio" id="pay" />
-						<label htmlFor="pay">Já está pago</label>
+						<label htmlFor="pay">
+							<input type="radio" id="pay" />
+							Já está pago
+						</label>
 					</div>
 				</InputRadio>
 				<h6>Em qual data foi realizado?</h6>
@@ -90,7 +106,7 @@ const AddOrderInformation: React.FC = () => {
 				</SelectDate>
 				<Link to="orderfeedback">
 					<ButtonFinish>
-						<button>finalizar</button>
+						<button type="button">finalizar</button>
 					</ButtonFinish>
 				</Link>
 			</GridTree>

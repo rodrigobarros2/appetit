@@ -13,7 +13,10 @@ const OrderFeedback: React.FC = () => {
 			</GridOne>
 			<GridTwo>
 				<CookerIcon />
-				<ButtonFeedBack nameBtnOne="voltar para lista de pedidos" nameBtnTwoo="fazer novo pedido" />
+				<ButtonFeedBack
+					nameBtnOne="voltar para lista de pedidos"
+					nameBtnTwoo="fazer novo pedido"
+				/>
 			</GridTwo>
 		</Container>
 	);

@@ -3,7 +3,7 @@ import styled from 'styled-components';
 export const Container = styled.div`
 	display: grid;
 	grid-template-columns: 342px 1fr 1fr;
-	height:100%;
+	height: 100%;
 	overflow: hidden;
 
 	@media (max-width: 1200px) {
@@ -43,7 +43,7 @@ export const WrapperTree = styled.div`
 	padding: 72px 40px 12px;
 	overflow-x: hidden;
 
-	p{
+	p {
 		font-size: 16px;
 		line-height: 24px;
 		color: rgba(0, 0, 0, 0.56);
@@ -52,7 +52,7 @@ export const WrapperTree = styled.div`
 
 	div:nth-child(4) {
 		display: flex;
-		align-items:center;
+		align-items: center;
 		margin-top: 23px;
 
 		b {
@@ -62,16 +62,16 @@ export const WrapperTree = styled.div`
 		}
 
 		h6 {
-			flex:1;
+			flex: 1;
 		}
 
 		img {
-			padding: 0 16px 0 0 ;
+			padding: 0 16px 0 0;
 		}
 	}
 
 	> span {
-		display:block;
+		display: block;
 		margin-top: 24px;
 		font-size: 16px;
 		line-height: 24px;
@@ -103,7 +103,7 @@ export const WrapperTree = styled.div`
 		font-size: 16px;
 		line-height: 24px;
 		color: rgba(0, 0, 0, 0.88);
-		background: #FFFFFF;
+		background: #ffffff;
 
 		&::placeholder {
 			font-size: 16px;
@@ -118,8 +118,8 @@ export const InputRadio = styled.div`
 	color: rgba(0, 0, 0, 0.56);
 
 	div {
-		display:flex;
-		align-items:center;
+		display: flex;
+		align-items: center;
 		margin: 16px 0px;
 		background: var(--white);
 		box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.25);
@@ -160,7 +160,7 @@ export const Counter = styled.div`
 	justify-content: center;
 
 	button {
-		padding: 10px 15px;;
+		padding: 10px 15px;
 	}
 
 	button:nth-child(1) {
@@ -180,16 +180,16 @@ export const Counter = styled.div`
 `;
 
 export const BtnCounter = styled.div`
-	display:flex;
-	justify-content:center;
-	background: #FF8822;
+	display: flex;
+	justify-content: center;
+	background: #ff8822;
 	border-radius: 5px;
 	width: 203px;
 	height: 48px;
 	font-size: 14px;
 
 	button {
-		color: #FFFFFF;
+		color: #ffffff;
 	}
 `;
 
@@ -198,11 +198,11 @@ export const Bar = styled.div`
 	height: 10px;
 	background: rgba(0, 0, 0, 0.08);
 	position: relative;
-    width: 100%;
-    height: 8px;
+	width: 100%;
+	height: 8px;
 
 	&::before {
-		content: "";
+		content: '';
 		position: absolute;
 		left: -100%;
 		top: 0;
@@ -212,7 +212,7 @@ export const Bar = styled.div`
 	}
 
 	&:after {
-		content: "";
+		content: '';
 		position: absolute;
 		right: -100%;
 		top: 0;
@@ -223,6 +223,6 @@ export const Bar = styled.div`
 `;
 
 export const ContainerTree = styled.div`
-	display:grid;
+	display: grid;
 	overflow-y: auto;
 `;

@@ -3,7 +3,7 @@ import styled from 'styled-components';
 export const Container = styled.div`
 	display: grid;
 	grid-template-columns: 342px 1fr 1fr;
-	height:100%;
+	height: 100%;
 
 	@media (max-width: 1200px) {
 		display: grid;
@@ -17,13 +17,12 @@ export const Container = styled.div`
 
 export const GridOne = styled.div`
 	@media (max-width: 1200px) {
-			display:none;
+		display: none;
 	}
 `;
 export const GridTwo = styled.div`
-
 	@media (max-width: 900px) {
-		display:none;
+		display: none;
 	}
 `;
 
@@ -37,7 +36,7 @@ export const GridTree = styled.div`
 	}
 
 	> span {
-		display:block;
+		display: block;
 		margin-top: 24px;
 		color: rgba(0, 0, 0, 0.56);
 	}
@@ -54,29 +53,29 @@ export const ProductWrapping = styled.div`
 export const ClientsWrapping = styled.div`
 	padding: 16px 40px;
 
-	a{
-		color:inherit;
+	a {
+		color: inherit;
 	}
 `;
 
 export const TotalWrapping = styled.div`
 	padding: 24px 40px 0 40px;
-	display:flex;
+	display: flex;
 	align-items: center;
-	justify-content:space-between;
+	justify-content: space-between;
 `;
 
 export const Progreessbar = styled.div`
 	margin-top: 8px;
 	border-radius: 5px;
 	display: flex;
-	width:100%;
+	width: 100%;
 	height: 12px;
 	background: rgba(0, 0, 0, 0.08);
 
-	div:nth-child(1)  {
+	div:nth-child(1) {
 		width: 100%;
-		background: #FF8822;
+		background: #ff8822;
 		border-radius: 5px 5px;
 	}
 `;
@@ -84,35 +83,34 @@ export const Progreessbar = styled.div`
 export const ButtonFinish = styled.div`
 	margin-top: 40px;
 	width: 100%;
-	display:flex;
-	justify-content:flex-end;
+	display: flex;
+	justify-content: flex-end;
 
 	button {
 		width: 208px;
 		text-transform: uppercase;
-		color: #FFFFFF;
+		color: #ffffff;
 		height: 48px;
-		background: #FF8822;
+		background: #ff8822;
 		border-radius: 100px;
 	}
 `;
 
 export const SelectDate = styled.div`
-	margin-top:24px;
+	margin-top: 24px;
 	width: 100%;
 	padding: 16px 20px 16px 16px;
 	border: 1px solid rgba(0, 0, 0, 0.1);
 	box-sizing: border-box;
 	border-radius: 5px;
-	background: #FFFFFF;
+	background: #ffffff;
 	border-radius: 5px;
-	display:flex;
-	justify-content:space-between;
+	display: flex;
+	justify-content: space-between;
 
-	&::placeholder{
-	font-size: 16px;
-	line-height: 24px;
-	color: rgba(0, 0, 0, 0.88);
+	&::placeholder {
+		font-size: 16px;
+		line-height: 24px;
+		color: rgba(0, 0, 0, 0.88);
 	}
 `;
-

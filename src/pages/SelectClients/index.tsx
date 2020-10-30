@@ -1,13 +1,23 @@
 import React, { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
+import { ReturnIcon } from '../../styles/Icons';
+import { IconSearch, OrderInput } from '../OrderNew/styles';
 import Header from '../../components/Header';
 import NewOrder from '../../components/NewOrder';
-import { ReturnIcon } from '../../styles/Icons';
-
-import { Clients, Container, ContentOne, ContentTree, ContentTwo, Progreessbar, WrapperOne, WrapperTree, WrapperTwo } from './styles';
-import { IconSearch, OrderInput } from '../OrderNew/styles';
 import api from '../../services/api';
 import OrderBox from '../../components/OrderBox';
+
+import {
+	Clients,
+	Container,
+	ContentOne,
+	ContentTree,
+	ContentTwo,
+	Progreessbar,
+	WrapperOne,
+	WrapperTree,
+	WrapperTwo
+} from './styles';
 
 interface Clients {
 	id: number;
@@ -16,19 +26,17 @@ interface Clients {
 }
 
 const SelectClients: React.FC = () => {
-
 	const [clients, setClients] = useState<Clients[]>([]);
 
 	useEffect(() => {
 		async function loadApi() {
-			const response = await api.get("clients");
+			const response = await api.get('clients');
 			setClients(response.data);
 			console.log(response.data);
 		}
 		loadApi();
 	}, []);
 	return (
-
 		<Container>
 			<WrapperOne>
 				<Header />
@@ -59,17 +67,20 @@ const SelectClients: React.FC = () => {
 				<p>Preencha as informações abaixo para concluir esta venda.</p>
 				<span>Passo 2 de 3</span>
 				<Progreessbar>
-					<div></div>
+					<div />
 				</Progreessbar>
 				<h6>Para quem você está vendendo?</h6>
 				<OrderInput>
 					<IconSearch />
-					<input type="text" placeholder="Procure o cliente aqui..." />
+					<input
+						type="text"
+						placeholder="Procure o cliente aqui..."
+					/>
 				</OrderInput>
 				<section>
-					{clients.map((client) => (
+					{clients.map(client => (
 						<Link to="addorderinformation" key={client.id}>
-							<Clients >
+							<Clients>
 								<img src={client.avatar} alt="" />
 								<h6>{client.name}</h6>
 							</Clients>
@@ -77,8 +88,7 @@ const SelectClients: React.FC = () => {
 					))}
 				</section>
 			</WrapperTree>
-
-		</Container >
+		</Container>
 	);
 };
 

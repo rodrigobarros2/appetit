@@ -7,7 +7,7 @@ interface CardProps {
 	nameBtnTwoo: string;
 }
 
-const ButtonFeedBack: React.FC<CardProps> = (props) => {
+const ButtonFeedBack: React.FC<CardProps> = props => {
 	return (
 		<Container>
 			<p>Pedido feito com sucesso!</p>

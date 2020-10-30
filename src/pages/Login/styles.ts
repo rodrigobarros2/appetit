@@ -19,7 +19,7 @@ export const Logo = styled(AppetitIcon)`
 `;
 
 export const Wrapper = styled.div`
-	display:flex;
+	display: flex;
 	flex-direction: column;
 	align-items: center;
 	justify-content: center;

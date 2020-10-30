@@ -1,11 +1,11 @@
 import styled from 'styled-components';
-import { ReturnIcon, CookerIcon, SearchIcon } from '../../styles/Icons'
+import { ReturnIcon, CookerIcon, SearchIcon } from '../../styles/Icons';
 
 export const Container = styled.div`
 	display: grid;
 	grid-template-columns: 342px 1fr 1fr;
 	height: 100%;
-	overflow:hidden;
+	overflow: hidden;
 
 	@media (max-width: 1150px) {
 		display: grid;
@@ -19,7 +19,7 @@ export const Container = styled.div`
 
 export const WrapperOne = styled.div`
 	@media (max-width: 1150px) {
-		display:none;
+		display: none;
 	}
 `;
 
@@ -27,7 +27,7 @@ export const WrapperTwo = styled.div`
 	padding: 72px 40px;
 	background: var(--white);
 
-	a{
+	a {
 		color: inherit;
 	}
 
@@ -39,18 +39,18 @@ export const WrapperTwo = styled.div`
 	}
 
 	@media (max-width: 800px) {
-			display:none;
+		display: none;
 	}
 `;
 
 export const DivCooker = styled.div`
 	margin-top: 110px;
-	width:100%;
-	display:flex;
+	width: 100%;
+	display: flex;
 	flex-direction: column;
-	justify-content:center;
-	align-items:center;
-	text-align:center;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
 `;
 
 export const WrapperTree = styled.div`
@@ -59,7 +59,7 @@ export const WrapperTree = styled.div`
 	background: var(--gray);
 
 	> span {
-		display:block;
+		display: block;
 		margin-top: 24px;
 		font-size: 16px;
 		line-height: 24px;
@@ -69,7 +69,7 @@ export const WrapperTree = styled.div`
 		margin-top: 24px;
 		font-size: 16px;
 		line-height: 24px;
-		color: rgba(0, 0, 0, 0.56)
+		color: rgba(0, 0, 0, 0.56);
 	}
 
 	> h6 {
@@ -86,7 +86,7 @@ export const Product = styled.div`
 	border-bottom: 2px solid rgba(0, 0, 0, 0.08);
 
 	a {
-		color:inherit;
+		color: inherit;
 	}
 
 	div {
@@ -94,10 +94,10 @@ export const Product = styled.div`
 	}
 
 	section {
-		display:flex;
-		align-items:center;
+		display: flex;
+		align-items: center;
 		justify-content: space-between;
-		align-content:center;
+		align-content: center;
 		padding: 10px;
 
 		span {
@@ -107,7 +107,7 @@ export const Product = styled.div`
 		}
 
 		h6 {
-			flex:1;
+			flex: 1;
 			padding: 0 16px;
 		}
 	}
@@ -117,7 +117,7 @@ export const OrderInput = styled.div`
 	margin-top: 10px;
 	padding: 10px 0;
 	border-bottom: 1px solid rgba(0, 0, 0, 0.34);
-	display:flex;
+	display: flex;
 
 	input {
 		padding: 0 11px;
@@ -128,13 +128,13 @@ export const Progreessbar = styled.div`
 	margin-top: 8px;
 	border-radius: 5px;
 	display: flex;
-	width:100%;
+	width: 100%;
 	height: 12px;
 	background: rgba(0, 0, 0, 0.08);
 
-	div:nth-child(1)  {
+	div:nth-child(1) {
 		width: 33.3%;
-		background: #FF8822;
+		background: #ff8822;
 		border-radius: 5px 5px;
 	}
 `;
@@ -144,5 +144,3 @@ export const IconReturn = styled(ReturnIcon)``;
 export const IconCooker = styled(CookerIcon)`
 	text-align: center;
 `;
-
-

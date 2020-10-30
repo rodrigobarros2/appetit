@@ -13,25 +13,24 @@ export const Container = styled.div`
 
 export const GridOne = styled.div`
 	@media (max-width: 728px) {
-		display:none;
+		display: none;
 	}
 `;
 
 export const GridTwo = styled.div`
 	margin-top: -100px;
 	text-align: center;
-	display:flex;
+	display: flex;
 	flex-direction: column;
-	align-items:center;
+	align-items: center;
 	justify-content: center;
 
 	p {
-		display:block;
+		display: block;
 		margin: 30px 0 70px;
 	}
 
 	button > {
-		margin:20px;
+		margin: 20px;
 	}
 `;
-

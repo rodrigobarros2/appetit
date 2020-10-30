@@ -13,7 +13,7 @@ const OrderBox: React.FC = () => {
 				<b>R$ 3,25</b>
 			</div>
 			<span>Não adicionar manteiga</span>
-		</Container >
+		</Container>
 	);
 };
 

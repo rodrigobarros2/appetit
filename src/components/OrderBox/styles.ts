@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 
 export const Container = styled.div`
-	> div   {
+	> div {
 		display: flex;
 		align-items: center;
 		justify-content: space-between;
@@ -9,7 +9,7 @@ export const Container = styled.div`
 	}
 
 	span {
-		display:block;
+		display: block;
 		margin-top: 16px;
 		font-size: 16px;
 		line-height: 24px;
@@ -23,7 +23,7 @@ export const Container = styled.div`
 	}
 
 	h6 {
-		flex:1;
+		flex: 1;
 	}
 
 	img {
