@@ -18,10 +18,7 @@ const Routes: React.FC = () => (
 			<Route path="/ordernew" component={OrderNew} />
 			<Route path="/orderdetailing" component={OrderDetailing} />
 			<Route path="/selectclients" component={SelectClients} />
-			<Route
-				path="/addorderinformation"
-				component={AddOrderInformation}
-			/>
+			<Route path="/addorderinformation" component={AddOrderInformation}/>
 			<Route path="/orderfeedback" component={OrderFeedback} />
 		</Switch>
 	</BrowserRouter>
