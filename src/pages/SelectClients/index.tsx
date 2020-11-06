@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import React, { useEffect, useState, useContext } from 'react';
 import { Link } from 'react-router-dom';
 import { ReturnIcon } from '../../styles/Icons';
 import { IconSearch, OrderInput } from '../OrderNew/styles';
@@ -19,14 +19,15 @@ import {
 	WrapperTwo
 } from './styles';
 
-interface Clients {
+interface Client {
 	id: number;
 	name: string;
 	avatar: string;
 }
 
 const SelectClients: React.FC = () => {
-	const [clients, setClients] = useState<Clients[]>([]);
+
+	const [clients, setClients] = useState<Client[]>([]);
 
 	useEffect(() => {
 		async function loadApi() {
@@ -36,6 +37,7 @@ const SelectClients: React.FC = () => {
 		}
 		loadApi();
 	}, []);
+
 	return (
 		<Container>
 			<WrapperOne>
