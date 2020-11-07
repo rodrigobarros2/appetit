@@ -7,6 +7,8 @@ import { DivCooker, IconCooker } from '../OrderNew/styles';
 import CuzcuzIcon from '../../assets/cuzcuz.svg';
 /* import RadioButtonOn from '../../assets/radio-button-on.svg'; */
 
+import { useCount } from '../../context/Count';
+
 import {
 	Container,
 	WrapperOne,
@@ -22,7 +24,7 @@ import {
 } from './styles';
 
 const OrderDetailing: React.FC = () => {
-	const [count, setCount] = useState(1);
+	const { count, setCount } = useCount();
 	const [option, setOption] = useState('');
 	return (
 		<Container>
