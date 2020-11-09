@@ -3,13 +3,13 @@ import React from 'react';
 import Routes from './routes';
 import GlobalStyles from './styles/GlobalStyles';
 
-import { CountProvider } from './context/Count';
+import { OrderboxProvider } from './context/Orderbox';
 
 const App: React.FC = () => (
 	<>
-		<CountProvider>
+		<OrderboxProvider>
 			<Routes />
-		</CountProvider>
+		</OrderboxProvider>
 		<GlobalStyles />
 	</>
 );
