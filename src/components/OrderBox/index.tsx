@@ -1,10 +1,10 @@
 import React from 'react';
 import CuzcuzIcon from '../../assets/cuzcuz.svg';
-import { useCount } from '../../context/Count';
+import { useOrderBox } from '../../context/Orderbox';
 import { Container } from './styles';
 
 const OrderBox: React.FC = () => {
-	const { count } = useCount();
+	const { count, observation } = useOrderBox();
 
 	return (
 		<Container>
@@ -14,7 +14,7 @@ const OrderBox: React.FC = () => {
 				<h6>{count}x Cuscuz completo</h6>
 				<b>R$ 3,25</b>
 			</div>
-			<span>Não adicionar manteiga</span>
+			<span>{observation}</span>
 		</Container>
 	);
 };
