@@ -108,6 +108,10 @@ export const SelectDate = styled.div`
 	display: flex;
 	justify-content: space-between;
 
+	input {
+		width: 100%;
+	}
+
 	&::placeholder {
 		font-size: 16px;
 		line-height: 24px;
