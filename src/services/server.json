@@ -121,7 +121,7 @@
 			"id": 3,
 			"imgIten": "https://svgshare.com/i/Kka.svg",
 			"name": "Pão caseiro",
-			"price": 2.25,
+			"price": 3.25,
 			"nameproduct" : "Paes",
 			"options": [
 				{
@@ -138,7 +138,7 @@
 			"id": 4,
 			"imgIten": "https://svgshare.com/i/Kne.svg",
 			"name": "Pão caseiro completo",
-			"price": 2.25,
+			"price": 3.25,
 			"options": [
 				{
 					"id": 1,
