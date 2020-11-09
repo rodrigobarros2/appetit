@@ -1,4 +1,4 @@
-import React, { useEffect, useState, useContext } from 'react';
+import React, { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 import { ReturnIcon } from '../../styles/Icons';
 import { IconSearch, OrderInput } from '../OrderNew/styles';
@@ -26,7 +26,6 @@ interface Client {
 }
 
 const SelectClients: React.FC = () => {
-
 	const [clients, setClients] = useState<Client[]>([]);
 
 	useEffect(() => {
@@ -64,7 +63,6 @@ const SelectClients: React.FC = () => {
 			</WrapperTwo>
 
 			<WrapperTree>
-				<ReturnIcon />
 				<NewOrder name="Informações para o pedido" />
 				<p>Preencha as informações abaixo para concluir esta venda.</p>
 				<span>Passo 2 de 3</span>
