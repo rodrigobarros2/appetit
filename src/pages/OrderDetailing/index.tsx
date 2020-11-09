@@ -6,8 +6,7 @@ import { IconReturn } from '../../components/NewOrder/styles';
 import { DivCooker, IconCooker } from '../OrderNew/styles';
 import CuzcuzIcon from '../../assets/cuzcuz.svg';
 /* import RadioButtonOn from '../../assets/radio-button-on.svg'; */
-
-import { useCount } from '../../context/Count';
+import { useOrderBox } from '../../context/Orderbox';
 
 import {
 	Container,
@@ -24,7 +23,7 @@ import {
 } from './styles';
 
 const OrderDetailing: React.FC = () => {
-	const { count, setCount } = useCount();
+	const { count, setCount, setObservation } = useOrderBox();
 	const [option, setOption] = useState('');
 	return (
 		<Container>
@@ -45,6 +44,7 @@ const OrderDetailing: React.FC = () => {
 				<WrapperTree>
 					<IconReturn />
 					<NewOrder name="Detalhes do pedido" />
+
 					<p>
 						Aproveite para adicionar alguma observação para este
 						pedido, caso queira.
@@ -88,7 +88,7 @@ const OrderDetailing: React.FC = () => {
 					</InputRadio>
 					<Bar />
 					<h6>Observações</h6>
-					<input type="text" placeholder="Observações" />
+					<input onChange={(e) => setObservation(e.target.value)} type="text" placeholder="Observações" />
 				</WrapperTree>
 
 				<WrapperCounter>
